@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="login_police.css">
+    <title>Rajasthan Police Login</title>
+<style>
+    .error {
+        color: red;
+    }
+</style>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    var y = document.forms["myForm"]["lname"].value;
+    var z = document.forms["myForm"]["email"].value;
+    var a = document.forms["myForm"]["password"].value;
+    var b = document.forms["myForm"]["confirmpassword"].value;
+    var c = document.forms["myForm"]["gender"].value;
+    var d = document.forms["myForm"]["aadhar"].value;
+    var e = document.forms["myForm"]["phone"].value;
+
+    if (x == "" || y == "" || z == "" || a == "" || b == "" || c == "" || d == "" || e == "") {
+        document.getElementById("error").innerHTML = "All fields must be filled out";
+        return false;
+    }
+    if (a != b) {
+        document.getElementById("error").innerHTML = "Passwords do not match";
+        return false;
+    }
+    if (!validateEmail(z)) {
+        document.getElementById("error").innerHTML = "Invalid email format";
+        return false;
+    }
+    if (!validateAadhar(d)) {
+        document.getElementById("error").innerHTML = "Invalid Aadhar format";
+        return false;
+    }
+    if (!validatePhone(e)) {
+        document.getElementById("error").innerHTML = "Invalid phone number format";
+        return false;
+    }
+    return true;
+}
+
+function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}
+
+function validateAadhar(aadhar) {
+    var re = /^\d{12}$/;
+    return re.test(aadhar);
+}
+
+function validatePhone(phone) {
+    var re = /^\d{10}$/;
+    return re.test(phone);
+}
+</script>
+</head>
+<body>
+<section class="heading">
+
+<img class="logologin" src="Rajasthan_Police_Logo.png" alt="">
+<h2 class="head">REGISTRATION FORM</h2>
+</section>
+<form name="myForm" action="/submit_form" onsubmit="return validateForm()" method="post">
+    <input type="text" placeholder="First Name" name="name">
+    <br>
+    <input type="text" placeholder="Last Name" name="lname">
+    <br>
+    <input type="text" placeholder="Email" name="email">
+    <br>
+    <input type="password" placeholder="Password" name="password">
+    <br>
+    <input type="password" placeholder="confirm password"  name="confirmpassword">
+    <br>
+    <select name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+    <br>
+    <input type="text" placeholder="Aadhar No." name="aadhar">
+    <br>
+    <input type="text" placeholder="Phone no."  name="phone">
+    <br><br>
+    <input type="submit"  value="Submit">
+    
+</form>
+<p id="error" class="error"></p>
+<div class="loginparalast">
+<p class="loginpara">if you have already registered then click on <a href="login.html">Login</a>
+    
+</p>
+</div>
+
+
+
+</body>
+</html>

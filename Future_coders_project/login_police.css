@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head{
+    align-items: center;
+    display: flex;
+    align-content: center;
+    padding-left: 30%;
+}
+.heading{
+    display: flex;
+}
+.logologin{
+    display: flex;
+    width: 131px;
+    height: 131px;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+form {
+    margin: -42px auto;
+    width: 309px;
+}
+.loginpara{
+    align-items: center;
+    padding-left: 37%;
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 7px 20px;
+    margin: 6px 0;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #1fbd24;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+}
+.loginparalast{
+    padding-top: 1%;
+}

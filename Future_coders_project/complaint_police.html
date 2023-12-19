@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="complain_police.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIR Registration</title>
+</head>
+
+<body>
+    <section class="registerfir">
+        <img class="logologin" src="Rajasthan_Police_Logo.png" alt="">
+        <h1 class="mainhead">REGISTER FIR</h1>
+    </section>
+    <section class="registration">
+        <form id="fir-form">
+
+            <input id="name" placeholder="Name" name="name" type="text" required>
+            <br>
+                <div class="form-group">
+                     <label for="dob">Date of incident:</label>
+                      <input type="date" id="dob" name="dob">
+                </div>
+            <input id="place" placeholder="Place" name="place" type="text" required>
+            <br>
+
+            <input id="contact" placeholder="Contact numebr" name="contact" type="text" required>
+            <br>
+            <textarea id="complaint" placeholder="Complaint" name="complaint" required></textarea>
+            <br>
+
+            <button type="submit" id="registerButton">Register FIR</button>
+            <span id="firNumber"></span>
+        </form>
+    </section>
+
+    <script src="complaint_police.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.head1{
+    padding-left: 35%;
+}
+
+
+.logo img {
+    height: 78px;
+    width: 78px;
+    padding-left: 576%;
+}
+
+nav {
+    background-color: #336699;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.profilepic{
+    width: 145px;
+    height: 162px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.links:hover{
+    color: red;
+    background-color: red;
+}
+
+.linkregister{
+    text-decoration: none;
+    float: right;
+    background-color: red;
+    color: white;
+    /* padding-left: 40%; */
+    margin-left:33%;
+    width: 6%;
+    border-radius: 5%;
+}
+
+section {
+    padding: 1px 20px;
+    text-align: center;
+}
+
+.hero-image {
+    width: 145px;
+    height: 162px;
+}
+.home{
+    display: flex;
+}
+
+.intro {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #003366;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}

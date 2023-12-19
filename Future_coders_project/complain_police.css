@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.logologin{
+    
+    width: 131px;
+    height: 131px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.registerfir{
+    display: flex;
+    align-items: center;
+}
+.mainhead{
+    padding-left: 31%;
+    font-size: 40px;
+}
+
+
+form {
+    background-color: #b9c4cf;
+    padding: 85px;
+    border-radius: 5px;
+    max-width: 279px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+.registration{
+    padding-left:34%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+#firNumber {
+    display: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 28%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
